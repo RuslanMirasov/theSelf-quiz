@@ -1,0 +1,590 @@
+/*------------sections*/
+.screen {
+   display: none;
+   width: 100%;
+   height: auto;
+   position: relative;
+   overflow: hidden;
+   background: #fff;
+
+   &.step {
+      .wrapp {
+         @include css-r("padding-top", 74, 50, 1);
+         @include css-r("padding-bottom", 74, 50, 1);
+      }
+   }
+
+   &.screen--full {
+      height: 100vh;
+      min-height: 100vh;
+
+      .wrapp {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+      }
+   }
+
+   &.active {
+      display: block;
+   }
+}
+
+.wrapp {
+   display: block;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   margin: 0 auto;
+   padding: 0px 20px;
+   max-width: 1200px;
+}
+
+/*-------Section STEP 1-----------*/
+
+.presentsList {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin: 50px 0px;
+
+   .presentsList__item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 124px;
+      height: 124px;
+      margin: 0px 48px;
+      margin-bottom: 40px;
+      position: relative;
+      border-radius: 124px;
+
+      p {
+         display: inline-block;
+         position: absolute;
+         bottom: -40px;
+      }
+
+      img {
+         display: block;
+         max-width: 100%;
+         position: relative;
+         transition: 0.3s;
+         transform: scale(1);
+      }
+
+      &:hover {
+         img {
+            transform: scale(1.1);
+         }
+      }
+   }
+}
+
+.boss {
+   position: absolute;
+   left: 0px;
+   text-align: left;
+
+   .boss__image {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      width: 94px;
+      height: 94px;
+      position: relative;
+
+      img {
+         display: block;
+         max-width: 100%;
+      }
+
+      div {
+         position: absolute;
+         background: #EEEEEE;
+         border-radius: 12px;
+         padding: 9px 40px 9px 88px;
+         left: 26px;
+         z-index: -1;
+
+         .f12 {
+            margin-top: 4px;
+         }
+      }
+   }
+
+   .f12 {
+      margin-top: 20px;
+   }
+}
+
+/*-------Section STEP 2-----------*/
+
+.step--2 {
+   .col {
+      &.col--25 {
+         order: 2;
+         text-align: right;
+
+         .image {
+            display: inline-block;
+            width: 100%;
+            max-width: 295px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 14px;
+
+            img {
+               display: block;
+               width: 100%;
+            }
+         }
+
+         p {
+            padding-top: 10px;
+         }
+      }
+
+      &.col--75 {
+         order: 1;
+         padding-right: 2%;
+      }
+   }
+}
+
+/*inputs*/
+.inputs {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   position: relative;
+   margin-top: 10px;
+
+   &.mw--550 {
+      max-width: 550px;
+   }
+
+   &.mw--450 {
+      max-width: 450px;
+
+      .button {
+         margin-top: 10px;
+      }
+   }
+
+   &.mw--640 {
+      max-width: 674px;
+   }
+
+   &.mw--310 {
+      max-width: 310px;
+
+      .button {
+         margin-top: 10px;
+      }
+   }
+
+   .inputs__inner {
+      display: inline-block;
+      position: relative;
+      margin-top: 24px;
+      width: 100%;
+
+      &.col--1 {
+         width: 100%;
+         padding-right: 30px;
+      }
+
+      &.col--2 {
+         width: 50%;
+         padding-right: 30px;
+      }
+
+      &.col--3 {
+         width: 33.333333%;
+         padding-right: 30px;
+      }
+   }
+}
+
+/*radio + checkbox*/
+.label {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100%;
+   height: 50px;
+   border: 1px solid #DEDEDE;
+   box-sizing: border-box;
+   border-radius: 12px;
+   position: relative;
+   cursor: pointer;
+
+   &.spacial {
+      border: none;
+      height: auto;
+      @include css-r('margin-bottom', 100, 30, 1);
+
+      p,
+      span {
+         padding: 0px 10px 0px 36px;
+         font-size: 16px;
+         line-height: 20px;
+         color: #9E9E9E;
+
+         &:before {
+            box-sizing: border-box;
+            left: 0px;
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border: 1px solid $color;
+            border-radius: 2px;
+         }
+      }
+
+      input[type="checkbox"]+span:after,
+      input[type="checkbox"]+p:after {
+         width: 19px;
+         height: 7px;
+         left: 4px;
+         border-left: 2px solid #086e80;
+         border-bottom: 2px solid #086e80;
+      }
+   }
+
+   input {
+      display: none;
+   }
+
+   p,
+   span {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      padding: 0px 10px 0px 50px;
+      font-size: 16px;
+      line-height: 18px;
+
+      &:before {
+         content: '';
+         position: absolute;
+         left: 15px;
+         width: 20px;
+         height: 20px;
+         background: #E1E1E1;
+         border-radius: 20px;
+      }
+
+      &:after {
+         content: '';
+         position: absolute;
+         left: 16px;
+         width: 20px;
+         height: 20px;
+         background: $color;
+         border-radius: 20px;
+         transition: 0.3s;
+         opacity: 0;
+      }
+   }
+
+   input[type="checkbox"]+span:after,
+   input[type="checkbox"]+p:after {
+      width: 14px;
+      height: 5px;
+      transform: rotate(-45deg) translate(7px, -1px);
+      border-left: 2px solid #086e80;
+      border-bottom: 2px solid #086e80;
+      border-radius: 0px;
+      background: rgba(0, 0, 0, 0);
+   }
+
+   input[type="radio"]:checked+span:after,
+   input[type="radio"]:checked+p:after {
+      opacity: 1;
+   }
+
+   input[type="checkbox"]:checked+span:after,
+   input[type="checkbox"]:checked+p:after {
+      opacity: 1;
+   }
+}
+
+/*-------Section STEP 3-----------*/
+.step .col.col--60 {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   align-content: space-between;
+   order: 1;
+}
+
+.step .col.col--40 {
+   order: 2;
+}
+
+.before-after {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: space-between;
+   align-items: flex-start;
+   position: relative;
+
+   .before-after__inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 48%;
+      margin: 2% 0%;
+
+      &:before {
+         content: '';
+         display: block;
+         width: 100%;
+         padding-top: 80%;
+      }
+
+      img {
+         width: 100%;
+         position: absolute;
+         left: 0px;
+         top: 0px;
+      }
+
+      .text {
+         display: inline-flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+         width: auto;
+         position: absolute;
+         padding-left: 40%;
+         padding-right: 40%;
+         top: 0px;
+         border-radius: 100px;
+         border: 1px solid $color;
+
+         p {
+            position: absolute;
+            font-size: 20px;
+            line-height: 24px;
+         }
+
+         &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            padding-top: 100%;
+         }
+      }
+   }
+}
+
+/*-------Section STEP 4-----------*/
+
+.poster {
+   display: block;
+   position: relative;
+   width: 100%;
+   max-width: 462px;
+   border-radius: 15px;
+   overflow: hidden;
+   background: #eee;
+
+   img.lazy {
+      display: block;
+      width: 60px;
+      position: absolute;
+      left: 30px;
+      top: 30px;
+   }
+
+   img.lazy.relative {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      position: absolute;
+      left: auto;
+      right: 0px;
+      top: 0px;
+   }
+
+
+   &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 86%;
+   }
+}
+
+/*-------Section STEP 9-----------*/
+.presentWrapp {
+   display: none;
+   width: 100%;
+   text-align: center;
+
+   &.active {
+      display: block;
+   }
+}
+
+.finalPresent {
+   display: inline-flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   width: 226px;
+   height: 226px;
+   margin: 30px 0px;
+
+   h5,
+   h6 {
+      position: absolute;
+      display: inline-block;
+      width: auto;
+      white-space: nowrap;
+   }
+
+   h5 {
+      right: 120%;
+   }
+
+   h6 {
+      left: 90%;
+      background: $color;
+      padding: 24px 40px 24px 60px;
+      border-radius: 12px;
+      z-index: 1;
+   }
+
+   .image {
+      display: block;
+      width: 226px;
+      height: 226px;
+      overflow: hidden;
+      border-radius: 226px;
+      position: relative;
+      z-index: 2;
+
+      img {
+         width: 100%;
+         position: relative;
+         transition: 0.3s;
+         transform: scale(1);
+      }
+
+      &:hover {
+         img {
+            transform: scale(1.1);
+         }
+      }
+   }
+}
+
+.lastStep {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   border-left: 1px solid $color;
+   border-top: 1px solid $color;
+   border-radius: 12px 0px 0px 0px;
+   position: absolute;
+   right: 0px;
+   bottom: 0px;
+   cursor: pointer;
+   background: rgba(0, 0, 0, 0);
+   transition: 0.3s;
+   width: 15%;
+
+   &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 100%;
+   }
+
+   p {
+      display: inline-block;
+      position: absolute;
+      color: $color;
+      transition: 0.3s;
+
+      svg {
+         display: inline-block;
+         position: absolute;
+         left: 0px;
+         right: 0px;
+         bottom: -10px;
+
+         path {
+            fill: $color;
+            transition: 0.3s;
+         }
+      }
+   }
+
+   &:hover {
+      background: $color;
+
+      p {
+         color: #fff;
+
+         svg {
+            path {
+               fill: #fff;
+            }
+         }
+      }
+   }
+}
+
+.finalForm {
+   width: 100%;
+
+   .inputs {
+      margin: 0 auto;
+   }
+}
+
+.hiddenBox {
+   display: block;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   background: #fff;
+   opacity: 0.5;
+   transition: 0.3s;
+
+   &.hidden {
+      z-index: 0;
+      opacity: 0;
+   }
+}
+
+.cant_halp {
+   z-index: 2;
+}

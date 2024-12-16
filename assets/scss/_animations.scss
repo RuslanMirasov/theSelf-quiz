@@ -1,0 +1,70 @@
+/*rotate [animation: 4s linear 0s infinite alternate rotate] */
+@keyframes loadStep {
+	0% {
+		width: 0%;
+		left: 0px;
+	}
+
+	40% {
+		width: 100%;
+		left: 0px;
+		right: auto
+	}
+
+	60% {
+		width: 100%;
+		left: auto;
+		right: 0px
+	}
+
+	100% {
+		width: 0%;
+		left: auto;
+		right: 0px
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/*standatr animations*/
+.anim {
+	opacity: 0;
+	transition: 0.8s ease-out 0s;
+}
+
+.anim.anim--top {
+	transform: translate(0px, -20px);
+}
+
+.anim.anim--bottom {
+	transform: translate(0px, 20px);
+}
+
+.anim.anim--right {
+	transform: translate(20px, 0px);
+}
+
+.anim.anim--left {
+	transform: translate(-20px, 0px);
+}
+
+.anim.anim--bottom,
+.anim.anim--right,
+.anim.anim--top,
+.anim.anim--left {
+	&.animate {
+		transform: translate(0px, 0px);
+	}
+}
+
+.anim.animate {
+	opacity: 1;
+}

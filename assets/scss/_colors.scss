@@ -1,0 +1,35 @@
+$color:#086E80;
+/*E7582A 4DD66C 1a9c7d d92a26*/
+$text_color:#404040;
+$day:#fff;
+$night:#202020;
+$gray:#9E9E9E;
+$error:red;
+
+.c1 {
+   background: #eee !important;
+}
+
+.error_color {
+   color: $error !important;
+}
+
+.color {
+   color: $color !important;
+}
+
+.color_bg {
+   background: $color !important;
+}
+
+.gray {
+   color: $gray !important;
+}
+
+.white {
+   color: #fff;
+}
+
+.black {
+   color: #000;
+}

@@ -1,0 +1,171 @@
+/*------------default resets*/
+* {
+   margin: 0;
+   padding: 0;
+   outline: none;
+   box-sizing: border-box;
+}
+
+html {
+   height: 100%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+b,
+p,
+ul,
+ol,
+button,
+.button:before,
+section,
+ul li,
+ol li,
+i,
+input,
+textarea,
+label,
+select {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+   justify-content: flex-start;
+   align-items: stretch;
+   overflow-x: hidden;
+   overflow-y: auto;
+   color: $text_color;
+
+   &.lock {
+      overflow-x: hidden;
+      overflow-y: hidden;
+   }
+}
+
+ul,
+ol,
+nav,
+menu {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   cursor: pointer;
+   color: inherit;
+}
+
+.show_in_tablet,
+.show_in_mobil {
+   display: none;
+}
+
+.main {
+   flex: 1 0 auto;
+   width: 100%;
+   min-height: 200px;
+   position: relative;
+}
+
+/*background*/
+.background {
+   display: block;
+   position: absolute;
+   overflow: hidden;
+   left: 0px;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   z-index: 0;
+   background-size: cover !important;
+   background-repeat: no-repeat !important;
+   background-position: center !important;
+   opacity: 1;
+
+   &.background.filter--1 {
+      opacity: 0.1;
+   }
+
+   &.background.filter--2 {
+      opacity: 0.2;
+   }
+
+   &.background.filter--3 {
+      opacity: 0.3;
+   }
+
+   &.background.filter--4 {
+      opacity: 0.4;
+   }
+
+   &.background.filter--5 {
+      opacity: 0.5;
+   }
+
+   &.background.filter--6 {
+      opacity: 0.6;
+   }
+
+   &.background.filter--7 {
+      opacity: 0.7;
+   }
+
+   &.background.filter--8 {
+      opacity: 0.8;
+   }
+
+   &.background.filter--9 {
+      opacity: 0.9;
+   }
+
+   &.background.filter--10 {
+      opacity: 1;
+   }
+
+   &.cubic {
+      transition: 1s cubic-bezier(0, .85, .01, .99) 0s;
+   }
+}
+
+//HOVER
+.hover {
+   position: relative;
+
+   &:before {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 1px;
+      background: $text_color;
+      left: auto;
+      right: 0px;
+      bottom: 0px;
+      transition: width 0.3s linear 0s;
+   }
+
+   &.color {
+      &:before {
+         background: $color;
+      }
+   }
+
+   &:hover {
+      &:before {
+         width: 100%;
+         left: 0px;
+         right: auto;
+      }
+   }
+}

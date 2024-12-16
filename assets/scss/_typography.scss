@@ -1,0 +1,187 @@
+body,
+.reg,
+.subtitle {
+   font-family: 'Manrope', sans-serif;
+   font-weight: 400;
+}
+
+.semi {
+   font-family: 'Manrope', sans-serif;
+   font-weight: 600;
+}
+
+.bold {
+   font-family: 'Manrope', sans-serif;
+   font-weight: 700;
+}
+
+.italic {
+   font-style: italic;
+}
+
+.title {
+   font-family: 'Playfair Display', serif;
+   font-weight: 400;
+}
+
+.title__bold {
+   font-family: 'Playfair Display', serif;
+   font-weight: 600;
+}
+
+.ta--l {
+   text-align: left;
+}
+
+.ta--r {
+   text-align: right;
+}
+
+.ta--c {
+   text-align: center;
+}
+
+.upper {
+   text-transform: uppercase;
+}
+
+.under {
+   text-decoration: underline;
+}
+
+.through {
+   text-decoration: line-through;
+}
+
+.titleBox {
+   display: inline-block;
+   width: 100%;
+   position: relative;
+}
+
+.titleBox>* {
+   margin-bottom: 25px;
+
+   &:last-child {
+      margin-bottom: 0px !important;
+   }
+}
+
+.subtitle {
+   font-size: 20px;
+   line-height: 22.5px;
+}
+
+.overtitle {
+   font-size: 16px;
+   line-height: 24px;
+}
+
+.large {
+   @include css-r("font-size", 89, 32, 1);
+   @include css-r("line-height", 97, 38, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   width: 100%;
+}
+
+h2 {
+   @include css-r("font-size", 57, 57, 1);
+   @include css-r("line-height", 64, 64, 1);
+}
+
+h3 {
+   @include css-r("font-size", 35, 35, 1);
+   @include css-r("line-height", 39, 39, 1);
+}
+
+h4 {
+   @include css-r("font-size", 31, 35, 1);
+   @include css-r("line-height", 34, 39, 1);
+}
+
+h5 {
+   @include css-r("font-size", 27, 27, 1);
+   @include css-r("line-height", 30, 30, 1);
+}
+
+h6 {
+   @include css-r("font-size", 23, 23, 1);
+   @include css-r("line-height", 25, 25, 1);
+}
+
+.f27 {
+   font-size: 27px;
+   line-height: 37px;
+}
+
+.f22 {
+   font-size: 22px;
+   line-height: 24px;
+}
+
+.f20 {
+   font-size: 20px;
+   line-height: 26px;
+}
+
+.f19 {
+   font-size: 19px;
+   line-height: 24px;
+}
+
+.f18 {
+   font-size: 18px;
+   line-height: 22px;
+}
+
+.f16 {
+   font-size: 16px;
+   line-height: 22px;
+}
+
+.f12 {
+   font-size: 12px;
+   line-height: 16px;
+}
+
+.link {
+   display: inline-block;
+   font-size: 18px;
+   line-height: 25px;
+   color: $color;
+   margin-top: 25px;
+}
+
+.text {
+   display: inline-block;
+   width: 100%;
+   position: relative;
+   margin-bottom: 30px;
+}
+
+.text>* {
+   margin-top: 20px;
+
+   &:first-child {
+      margin-top: 0px;
+   }
+}
+
+.green {
+   display: inline-block;
+   background: $color;
+   color: #fff;
+   border-radius: 12px;
+   padding: 12px 20px;
+
+   &.green--big {
+      padding: 20px 50px;
+   }
+}

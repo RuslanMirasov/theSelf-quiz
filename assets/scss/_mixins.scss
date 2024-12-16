@@ -1,0 +1,21 @@
+/*responsive css styles*/
+$maxWidth:1440;
+$maxWidthContainer:1440;
+
+@mixin css-r($property, $startSize, $minSize, $type) {
+	$addSize: $startSize - $minSize;
+
+	@if $type==1 {
+		//if smaller then container
+		#{$property}: $startSize + px;
+
+		@media only screen and (min-width:10px) and (max-width:($maxWidthContainer + px)) {
+			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+		}
+	}
+
+	@else {
+		//olweys
+		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+	}
+}

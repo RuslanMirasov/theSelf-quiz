@@ -1,0 +1,535 @@
+/*------------------------------------------------------------------------------ 1366px*/
+@media only screen and (min-width: 200px) and (max-width: 1439px) {
+   .header__links a:first-child {
+      font-size: 14px;
+   }
+
+   .header__links a {
+      font-size: 16px;
+   }
+
+   .large {
+      line-height: 70px;
+      font-size: 64px;
+   }
+
+   .button.circle {
+      height: 120px;
+      width: 120px;
+   }
+
+   .button.back {
+      height: 80px;
+      width: 80px;
+   }
+
+   .titleBox>* {
+      margin-bottom: 20px;
+   }
+
+   h5 {
+      line-height: 26px;
+      font-size: 24px;
+   }
+
+   h4 {
+      line-height: 30px;
+      font-size: 26px;
+   }
+
+   h2 {
+      font-size: 48px;
+      line-height: 48px;
+   }
+
+   .subtitle {
+      font-size: 18px;
+      line-height: 24px;
+   }
+
+   .presentsList {
+      margin: 30px 0px;
+      margin-bottom: 70px;
+   }
+
+   .presentsList .presentsList__item {
+      margin: 0px 36px;
+   }
+
+   .finalPresent {
+      width: 180px !important;
+      height: 180px !important;
+      margin: 24px 0px;
+   }
+
+   .finalPresent .image {
+      width: 180px;
+      height: 180px;
+   }
+
+   .finalPresent h6 {
+      padding: 20px 30px 20px 50px;
+   }
+
+   .text>* {
+      margin-top: 16px;
+   }
+
+   .lastStep:before {
+      padding-top: 70%;
+   }
+
+   .f27 {
+      font-size: 22px;
+      line-height: 30px;
+   }
+
+   .contacts img {
+      margin-right: 18px;
+      max-width: 24px;
+      max-height: 24px;
+   }
+
+   .f19 {
+      font-size: 18px;
+      line-height: 22px;
+   }
+}
+
+/*------------------------------------------------------------------------------ 1024px*/
+@media only screen and (min-width: 200px) and (max-width: 1279px) {
+   .boss .boss__image div {
+      padding: 9px 20px 9px 80px;
+   }
+
+   .label span,
+   .label p {
+      font-size: 14px;
+      line-height: 16px;
+   }
+
+   .lastStep p {
+      font-size: 14px;
+      line-height: 14px;
+   }
+
+   .lastStep {
+      width: 150px;
+   }
+
+   .footer {
+      padding: 0px 20px;
+   }
+
+   .f19 {
+      font-size: 16px;
+      line-height: 20px;
+   }
+
+   .contacts .color.hover.f19.semi {
+      margin-left: 20px;
+   }
+}
+
+/*------------------------------------------------------------------------------ 768px*/
+@media only screen and (min-width: 200px) and (max-width: 1023px) {
+   .show_in_tablet {
+      display: block !important;
+   }
+
+   .screen.screen--full .wrapp {
+      padding-bottom: 70px;
+      padding-top: 70px;
+   }
+
+   .screen.screen--full {
+      height: auto;
+      min-height: 100vh;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .screen.active {
+      display: flex;
+   }
+
+   .boss .boss__image {
+      display: inline-flex;
+   }
+
+   .boss {
+      position: relative;
+      width: 100%;
+      left: 0px;
+      text-align: center;
+      margin-bottom: 40px;
+      margin-top: 10px;
+   }
+
+   .boss .boss__image div {
+      text-align: left;
+   }
+
+   .forBtn {
+      margin-top: 10px;
+   }
+
+   .step.step--2 {
+      .wrapp {
+         padding-top: 70px;
+      }
+
+      .row .col.col--25 {
+         order: 1;
+         text-align: center;
+         margin-bottom: 30px;
+      }
+
+      .row .col.col--25,
+      .row .col.col--75 {
+         width: 100%;
+      }
+
+      .col--3 {
+         width: 50%;
+      }
+   }
+
+   .screen.step {
+
+      .inputs.mw--550,
+      .inputs.mw--640 {
+         max-width: 100%;
+      }
+
+      .row .col.col--40 {
+         order: 1;
+         margin-bottom: 30px;
+         text-align: center;
+      }
+
+      .row .col.col--40,
+      .row .col.col--60 {
+         width: 100%;
+      }
+   }
+
+   .before-after {
+      display: inline-flex;
+      max-width: 462px;
+   }
+
+   .poster {
+      display: inline-block;
+   }
+
+   .step .col.col--60,
+   .step .col.col--75 {
+      max-width: 462px;
+      margin: 0 auto;
+   }
+
+   .inputs .inputs__inner.col--1,
+   .inputs .inputs__inner.col--2,
+   .inputs .inputs__inner.col--3 {
+      padding: 0px;
+      width: 100%;
+   }
+
+   .inputs.mw--310,
+   .inputs.mw--450 {
+      max-width: 100%;
+   }
+
+   .finalPresent h6 {
+      padding: 10px 20px 10px 30px;
+   }
+
+   .finalPresent h6 {
+      padding: 10px 20px 10px 30px;
+      font-size: 20px;
+   }
+
+   .finalPresent h5 {
+      right: 110%;
+      font-size: 20px;
+   }
+
+   .lastStep p {
+      font-size: 18px;
+      line-height: 18px;
+   }
+
+   .lastStep:before {
+      padding-top: 40%;
+   }
+
+   .lastStep {
+      width: 230px;
+      left: 50%;
+      transform: translate(-50%, 0px);
+      border-right: 1px solid #086e80;
+      border-radius: 12px 12px 0px 0px;
+   }
+
+   .screen.screen--full.step.step--9 .wrapp {
+      padding-bottom: 120px;
+   }
+
+   .f20 {
+      font-size: 18px;
+      line-height: 24px;
+   }
+
+   .f18 {
+      font-size: 16px;
+      line-height: 24px;
+
+      br {
+         display: none;
+      }
+   }
+
+   .f16 {
+      font-size: 14px;
+      line-height: 21px;
+
+      br {
+         display: none;
+      }
+   }
+
+   .finalForm {
+      max-width: 462px;
+      margin: 0 auto;
+   }
+
+   .label.spacial span:before,
+   .label.spacial p:before {
+      width: 20px;
+      height: 20px;
+   }
+
+   .label.spacial input[type=checkbox]+span:after,
+   .label.spacial input[type=checkbox]+p:after {
+      width: 18px;
+      height: 6px;
+      left: 1px;
+   }
+
+   .footer {
+      padding: 0px 0px;
+
+      .col.col--3 {
+
+         .contacts.ta--c,
+         .contacts.ta--r {
+            justify-content: flex-start !important;
+         }
+      }
+
+   }
+
+   .footer .row .col.col--3 {
+      width: 100%;
+   }
+
+   .footer .row {
+      margin-bottom: 0px;
+
+      .col {
+         margin-bottom: 24px;
+      }
+   }
+
+   .label.spacial {
+      margin-bottom: 0px;
+   }
+
+
+
+
+
+
+}
+
+/*------------------------------------------------------------------------------ 320px*/
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+   .show_in_mobil {
+      display: block;
+   }
+
+   .del_in_mobil {
+      display: none !important;
+   }
+
+   .large {
+      line-height: 47px;
+      font-size: 37px;
+      margin-top: 30px;
+   }
+
+   .button p,
+   .button span {
+      font-size: 16px;
+      line-height: 20px;
+   }
+
+   .button.circle {
+      height: 110px;
+      width: 110px;
+   }
+
+   .screen.screen--full .wrapp {
+      padding-bottom: 50px;
+      padding-top: 120px;
+   }
+
+   .f22 {
+      font-size: 20px;
+      line-height: 28px;
+   }
+
+   h4 {
+      line-height: 24px;
+      font-size: 22px;
+   }
+
+   .presentsList .presentsList__item p {
+      display: inline-block;
+      position: relative;
+      bottom: -10px;
+   }
+
+   .presentsList .presentsList__item {
+      margin: 0px 36px;
+      margin-bottom: 60px;
+   }
+
+   .presentsList {
+      margin: 30px 0px;
+      margin-bottom: 0px;
+   }
+
+   .subtitle {
+      font-size: 16px;
+      line-height: 22px;
+
+      br {
+         display: none;
+      }
+   }
+
+   .f20 {
+      font-size: 16px;
+      line-height: 22px;
+   }
+
+   .f18 {
+      font-size: 15px;
+      line-height: 22px;
+   }
+
+   h6 {
+      font-size: 22px;
+      line-height: 26px;
+   }
+
+   .inputs .inputs__inner {
+      margin-top: 16px;
+   }
+
+   h5 {
+      line-height: 24px;
+      font-size: 20px;
+   }
+
+   .finalPresent {
+      width: 100% !important;
+      height: auto !important;
+      margin-top: 30px;
+   }
+
+   .finalPresent h5,
+   .finalPresent h6 {
+      position: relative;
+      width: auto;
+      white-space: normal;
+      text-align: center;
+   }
+
+   .finalPresent .image {
+      width: 100%;
+      height: auto;
+
+      img {
+         max-width: 180px;
+      }
+   }
+
+   .finalPresent h6 {
+      left: 0%;
+      margin-top: 24px;
+   }
+
+   .finalPresent h5 {
+      right: 0%;
+      margin-bottom: 24px;
+   }
+
+   .before-after .before-after__inner .text p {
+      position: absolute;
+      font-size: 16px;
+      line-height: 23px;
+   }
+
+   .f27 {
+      font-size: 18px;
+      line-height: 24px;
+   }
+
+   h2 {
+      font-size: 40px;
+      line-height: 48px;
+   }
+
+   .finalForm {
+      margin-top: 20px;
+      margin-bottom: 200px;
+   }
+
+   .footer {
+      position: absolute;
+      margin-top: 30px;
+   }
+
+   .label.spacial span,
+   .label.spacial p {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: left;
+   }
+
+   .footer .row .col {
+      margin-bottom: 20px;
+   }
+
+   .green.green--big {
+      padding: 20px 20px;
+   }
+
+   .boss .boss__image {
+      margin-left: -150px;
+
+      div {
+         padding: 12px 20px 12px 84px;
+
+         p {
+            font-size: 16px;
+            line-height: 20px;
+         }
+      }
+   }
+
+}

@@ -1,0 +1,53 @@
+/*------------footer*/
+
+.footer {
+   flex: 0 0 auto;
+   width: 100%;
+   position: absolute;
+   text-align: center;
+   left: 0px;
+   bottom: 0px;
+   z-index: 3;
+
+   .wrapp {
+      padding: 0px 20px !important;
+   }
+
+   .row {
+      margin-bottom: 30px;
+   }
+}
+
+.contacts {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   width: 100%;
+
+
+
+   &.ta--l {
+      justify-content: flex-start;
+   }
+
+   &.ta--c {
+      justify-content: center;
+   }
+
+   &.ta--r {
+      justify-content: flex-end;
+   }
+
+   img {
+      margin-right: 25px;
+
+      &.icon {
+         margin-right: 0px;
+         margin-left: 16px;
+      }
+   }
+
+   .color.hover.f19.semi {
+      margin-left: 25px;
+   }
+}

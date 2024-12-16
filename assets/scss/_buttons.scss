@@ -1,0 +1,94 @@
+/* buttons */
+.forBtn {
+   display: inline-block;
+   position: relative;
+   width: 100%;
+   margin-top: 20px;
+
+   .button {
+      margin-top: 20px;
+   }
+}
+
+.button {
+   display: inline-flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   width: auto;
+   height: 50px;
+   background: rgba(0, 0, 0, 0);
+   border: 1px solid $color;
+   border-radius: 12px;
+   cursor: pointer;
+   padding: 0px 40px;
+   transition: 0.3s;
+   position: relative;
+   z-index: 1;
+
+   p,
+   span {
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 1px;
+      color: $color;
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      transition: 0.3s;
+      text-align: center;
+   }
+
+   svg {
+      display: inline-block;
+      width: 28px;
+      margin-left: 12px;
+
+      path {
+         transition: 0.3s;
+         fill: $color;
+      }
+   }
+
+   &.full {
+      width: 100%;
+      padding: 14px 10px;
+   }
+
+   &.circle {
+      @include css-r("width", 134, 100, 1);
+      @include css-r("height", 134, 100, 1);
+      border-radius: 134px;
+      padding: 0;
+   }
+
+   &.back {
+      @include css-r("width", 112, 50, 1);
+      @include css-r("height", 112, 50, 1);
+      border-radius: 134px;
+      padding: 0;
+      background: $color;
+
+      p,
+      span {
+         color: #fff;
+         font-weight: 400;
+         @include css-r("font-size", 18, 12, 1);
+         @include css-r("line-height", 18, 12, 1);
+      }
+   }
+
+   &:hover {
+      background: $color;
+
+      p,
+      span {
+         color: #fff;
+      }
+
+      svg {
+         path {
+            fill: #fff;
+         }
+      }
+   }
+}

@@ -1,0 +1,88 @@
+// HEADER
+.header {
+   display: flex;
+   flex-wrap: wrap;
+   position: absolute;
+   left: 0px;
+   @include css-r("top", 30, 20, 1);
+   align-items: center;
+   flex: 0 0 auto;
+   width: 100%;
+   z-index: 50;
+   transition: box-shadow 0.4s ease-out 0s, background-color 0.4s ease-out 0s;
+   background-color: rgba(255, 255, 255, 0);
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
+
+   .wrapp {
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 20px !important;
+   }
+}
+
+.header__bottom {
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   min-height: 60px;
+   width: 100%;
+}
+
+//LOGO
+.logo {
+   display: inline-block;
+   @include css-r("width", 60, 50, 1);
+   @include css-r("height", 60, 50, 1);
+   position: relative;
+
+   a {
+      display: flex;
+      width: 100%;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+
+      img {
+         display: block;
+         max-width: 100%;
+      }
+
+      position: relative;
+   }
+}
+
+//header__links
+.header__links {
+   text-align: right;
+
+   a {
+      display: inline-block;
+      @include css-r("font-size", 18, 16, 1);
+      @include css-r("line-height", 24, 18, 1);
+      margin: 2px 0px;
+
+      &:first-child {
+         @include css-r("font-size", 18, 12, 1);
+      }
+   }
+}
+
+.loadStep {
+   display: block;
+   position: fixed;
+   left: 0px;
+   top: 0px;
+   width: 0%;
+   height: 100vh;
+   background: $color url(../svg/logo_white.svg) no-repeat center center;
+   background-size: 100px 100px;
+   z-index: 999;
+
+   &.start {
+      animation: loadStep 1.4s cubic-bezier(1, .2, 0, .8);
+   }
+}
